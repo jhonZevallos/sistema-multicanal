@@ -23,8 +23,10 @@ public class Usuario extends PanacheMongoEntityBase {
     @BsonId
     private Integer idUsuario;
     private String numeroTarjeta;
-    private LocalDate fechaVencimiento;
+    private Integer contraseña;
+    private String fechaVencimiento;
     private String codigoValidacion;
     private String tipoDocumento;
     private String numeroDocumento;
+    private String pin;
 }

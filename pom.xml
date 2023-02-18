@@ -36,6 +36,16 @@
       <version>1.18.24</version>
       <scope>provided</scope>
     </dependency>
+    <!-- Rest Client - para usar, el resteasy no debe ser reactivo  -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-rest-client-reactive</artifactId>
+    </dependency>
+    <!-- Rest Client permit JSON -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-rest-client-reactive-jackson</artifactId>
+    </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-reactive-jsonb</artifactId>

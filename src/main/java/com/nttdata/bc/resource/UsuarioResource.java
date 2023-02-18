@@ -2,6 +2,8 @@ package com.nttdata.bc.resource;
 
 import java.util.List;
 
+import org.jboss.logging.Logger;
+
 import com.nttdata.bc.model.Usuario;
 import com.nttdata.bc.service.IUsuarioService;
 
@@ -23,11 +25,15 @@ public class UsuarioResource {
     @Inject
     private IUsuarioService service;
 
+    @Inject
+    Logger log;
+
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     @Transactional
     public Response crearUsuario(Usuario obj) {
+        log.info("**************entro a post*****************");
         Usuario usuario = this.service.insert(obj);
         return Response.ok(usuario).build();
     }
