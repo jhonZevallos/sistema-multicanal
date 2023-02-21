@@ -1,4 +1,4 @@
-package com.nttdata.bc;
+package pe.com.nttdbank;
 
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;

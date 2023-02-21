@@ -7,11 +7,11 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native -t quarkus/sistema-multicanal .
+# docker build -f src/main/docker/Dockerfile.native -t quarkus/ms-customer-registration .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/sistema-multicanal
+# docker run -i --rm -p 8080:8080 quarkus/ms-customer-registration
 #
 ###
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6
